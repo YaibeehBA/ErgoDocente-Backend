@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Entornos virtuales
+.venv/
+venv/
+ENV/
+env/
+
+# Variables de entorno (NUNCA commitear)
+.env
+.env.example
+.env.local
+.env.production
+.env.staging
+
+# Tests y cobertura
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Alembic (no commitear versiones auto-generadas con datos sensibles)
+# alembic/versions/ -> sí se commitea para control de versiones
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporales
+*.tmp
+*.temp
