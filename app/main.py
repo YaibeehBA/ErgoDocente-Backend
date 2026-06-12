@@ -86,6 +86,20 @@ def create_app() -> FastAPI:
     configure_exception_handlers(app)
     _registrar_routers(app)
 
+   
+    @app.get("/")
+    async def root():
+        return {
+            "nombre": "ErgoDocente API",
+            "version": "1.0.0",
+            "descripcion": "Backend para app de ergonomia y bienestar para docentes",
+            "endpoints_disponibles": {
+                "v1": "/api/v1",
+                "docs": "/docs",
+                "redoc": "/redoc",
+            },
+        }
+
     return app
 
 
